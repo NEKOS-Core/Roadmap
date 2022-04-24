@@ -11,35 +11,36 @@ Once these features, runners and Java APIs are stable I will release an alpha re
     - This will form the core of the entire project
 
 - [ ] Services can be implemented with the following features:
-    - Ability to reply to a message if this chat service is capable of sending messages
-    - Format messages with whatever formatting the chat service supports 
-    - File attachments in messages if supported in the chat service
+    - [ ] Ability to reply to a message if this chat service is capable of sending messages
+    - [ ] Format messages with whatever formatting the chat service supports 
+    - [ ] File attachments in messages if supported in the chat service
     - The following events **when applicable**:
-        - Message received
-        - Message deleted
-        - User joined
-        - User left
+        - [ ] Message received
+        - [ ] Message edited
+        - [ ] Message deleted
+        - [ ] User joined
+        - [ ] User left
     - The following objects from events must have the following functionality **when applicable**
         - Message
-            - Content
-            - User
-            - Timestamp
-            - Channel
-            - *Replying to this message*
+            - [ ] Content
+            - [ ] User
+            - [ ] Timestamp
+            - [ ] Channel
+            - [ ] *Replying to this message*
         - User
-            - Name
-            - Nickname / Friendly name
-            - Hash of this services personally identifiable data (for example a static User ID)
-            - *Discipline this user (kick/ban/etc)*
+            - [ ] Name
+            - [ ] Nickname / Friendly name
+            - [ ] Hash of this services personally identifiable data (for example a static User ID)
+            - [ ] *Discipline this user (kick/ban/etc)*
         - Channel
-            - Name
-            - Method to get list of users
-            - Guild this belongs to
-            - *Rename this channel*
+            - [ ] Name
+            - [ ] Method to get list of users
+            - [ ] Guild this belongs to
+            - [ ] *Rename this channel*
         - Guild
-            - Name
-            - Method to get list of channels
-            - *Rename this guild*
+            - [ ] Name
+            - [ ] Method to get list of channels
+            - [ ] *Rename this guild*
 
 Plugins should be able to do the following cross-service:
  - [ ] Easily broadcast a message to every services default channel (Can exclude the service this was called from and/or other services)
@@ -48,7 +49,7 @@ Plugins should be able to do the following cross-service:
     - [ ] Discord
     - [ ] IRC
 
-With these features, this should be enough to build chat bots in NEKOS that are service agnostic. Media bots, game bots and other novelty bots already in coded should be possible to port to NEKOS and by extension run on other platforms. This will be the first initial release of NEKOS. It isn't feature complete and is still alpha software.
+With these features, this should be enough to build chat bots in NEKOS that are service agnostic. Media bots, game bots and other novelty bots already in coded in Kotlin should be possible to port to NEKOS and by extension run on other platforms. This will be the first initial release of NEKOS. It isn't feature complete and is still alpha software.
 
 ## Alpha 2 - As close to feature completeness as possible for text services
 In this release text services should have features as close as possible to their native APIs, while being generic and not interfering with the nature of NEKOS being service agnostic.
@@ -75,7 +76,7 @@ At this point I'm planning to finalise more services such as:
  - [ ] Matrix
  - [ ] Telegram
  - [ ] Email
-- [ ] RSS (Read-only)
+ - [ ] RSS (Read-only)
 
 
  ## Beta - Giving the runner shape
